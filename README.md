@@ -5,6 +5,7 @@ About Student Grade Predictor.
 How many hours they study per week
 How many times they've been absent
 Their grade from the first term
+
 The app then uses this information to estimate the final grade using a Linear Regression model, which learns from past student data.
 
 Features:
