@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 Student Grade Predictor</h1>
+            <p>Enter details below to estimate the final grade.</p>
+        </header>
+        <main>
+            <form action="/predict" method="POST">
+                <div class="form-group">
+                    <label for="studytime">📚 Study Time (hours/week):</label>
+                    <input type="number" step="0.1" name="studytime" placeholder="e.g., 5.5" required>
+                </div>
+                <div class="form-group">
+                    <label for="absences">❌ Number of Absences:</label>
+                    <input type="number" step="1" name="absences" placeholder="e.g., 3" required>
+                </div>
+                <div class="form-group">
+                    <label for="G1">📊 First Term Grade (G1):</label>
+                    <input type="number" step="0.1" name="G1" placeholder="e.g., 15.5" required>
+                </div>
+                <button type="submit">Predict Grade</button>
+            </form>
+            {% if prediction_text %}
+                <div class="result">
+                    <h2>{{ prediction_text }}</h2>
+                </div>
+            {% endif %}
+        </main>
+        <footer>
+            <p>&copy; 2024 Grade Predictor | Built with ❤️</p>
+        </footer>
+    </div>
+</body>
+</html>
