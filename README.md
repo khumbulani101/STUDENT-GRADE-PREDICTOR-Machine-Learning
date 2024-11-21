@@ -9,12 +9,18 @@ The app then uses this information to estimate the final grade using a Linear Re
 
 Features:
 Grade Prediction: The app predicts the final grade based on study time, absences, and first-term grade.
+
 Easy-to-Use Design: The app is designed to be simple and responsive, so it works well on both phones and computers.
+
 Instant Results: After entering the data, the app shows the predicted final grade right away.
+
 How It Works:
 The user enters how much they study, how often they miss class, and their first-term grade.
+
 The app uses the trained model to calculate the predicted grade.
+
 The predicted grade is displayed to the user.
+
 Tech Stack:
 Backend: Python, Flask, scikit-learn (for machine learning)
 Frontend: HTML, CSS (responsive design)
