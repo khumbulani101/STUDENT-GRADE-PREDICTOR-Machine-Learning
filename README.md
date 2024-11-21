@@ -1,5 +1,6 @@
-About Student Grade Predictor
-Student Grade Predictor is a web app that uses machine learning to predict a student's final grade. It asks the user for a few details like:
+About Student Grade Predictor.
+
+-Student Grade Predictor is a web app that uses machine learning to predict a student's final grade. It asks the user for a few details like:
 
 How many hours they study per week
 How many times they've been absent
